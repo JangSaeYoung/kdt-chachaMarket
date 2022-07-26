@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>차차마켓</title>
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8f941869ba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./js/main.js"></script>
@@ -18,9 +21,9 @@
         </a>
       </h1>
       <ul id="gnb">
-        <li><a href="#">중고거래</a></li>
-        <li><a href="#">제작상품</a></li>
-        <li><a href="#">활동지</a></li>
+        <li><a href="#sec1">중고거래</a></li>
+        <li><a href="#sec2">제작상품</a></li>
+        <li><a href="#sec3">활동지</a></li>
       </ul>
       <div class="search">
         <input class="search_input" type="text" placeholder="자료를 검색해보세요" />
@@ -59,7 +62,7 @@
     </figure>
     <section class="service">
       <div class="inner">
-        <p>놀이중심에는 다양한 자료가 필요합니다.</p>
+        <p>놀이중심에는 <br/>다양한 자료가 필요합니다.</p>
         <div class="content">
           <div class="content_1">
             <span>다양한<br />놀잇감 공유</span>
@@ -81,59 +84,142 @@
         </div>
       </div>
     </section>
-    <section class="sample">
+    <section class="sample" id="sec1">
       <div class="inner">
         <p class="title">
-          <span>NEW </span>아나바나 놀잇감 중고 거래
+          아나바나 놀잇감 중고 거래
         </p>
         <a href="#" class="sample_btn">중고거래 자세히 보기</a>
         <div class="sample_container">
-          <div class="item item1">
-            <div class="item_name"></div>
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-hand-sparkles"></i>
-            <div class="sample_script"></div>
+          <div class="item">
+            <div class="item_img item1"></div>
+            <div class="item_status">HOT</div>
+            <div class="item_text">
+              <h4>백두산 퍼즐</h4>
+              <p><i class="fa-solid fa-location-dot"></i>서귀포시</p>
+              <p><i class="fa-solid fa-calendar-days"></i>3개월</p>
+            </div>
+            <div class="badge badge_style">원목</div>
+            <div class="badge badge_age">3+</div>
           </div>
-          <div class="item item2">
-            <div class="item_name"></div>
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-hand-sparkles"></i>
+          <div class="item">
+            <div class="item_img item2"></div>
+            <div class="item_status">HOT</div>
+            <div class="item_text">
+              <h4>잠수함 퍼즐</h4>
+              <p><i class="fa-solid fa-location-dot"></i>서울 종로구</p>
+              <p><i class="fa-solid fa-calendar-days"></i>1년 이상</p>
+            </div>
+            <div class="badge badge_style">원목</div>
+            <div class="badge badge_age">3+</div>
           </div>
-          <div class="item item3">
-            <div class="item_name"></div>
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-hand-sparkles"></i>
-            <div class="sample_new">New</div>
-
+          <div class="item">
+            <div class="item_img item3"></div>
+            <div class="item_status">HOT</div>
+            <div class="item_text">
+              <h4>일곱 무지개 퍼즐</h4>
+              <p><i class="fa-solid fa-location-dot"></i>서울 동대문구</p>
+              <p><i class="fa-solid fa-calendar-days"></i>1년 이상</p>
+            </div>
+            <div class="badge badge_style">원목</div>
+            <div class="badge badge_age">1+</div>
           </div>
-          <div class="item item4">
-            <div class="item_name"></div>
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-hand-sparkles"></i>
-            <div class="sample_hot">Hot</div>
+          <div class="item">
+            <div class="item_img item4"></div>
+            <div class="item_status">HOT</div>
+            <div class="item_text">
+              <h4>하마 유니콘</h4>
+              <p><i class="fa-solid fa-location-dot"></i>대전 유성구</p>
+              <p><i class="fa-solid fa-calendar-days"></i>6개월 이상</p>
+            </div>
+            <div class="badge badge_style">인형</div>
+            <div class="badge badge_age">1+</div>
           </div>
-          <div class="item item5">
-            <div class="item_name"></div>
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-hand-sparkles"></i>
-            <div class="sample_new">New</div>
+          <div class="item">
+            <div class="item_img item5"></div>
+            <div class="item_status">HOT</div>
+            <div class="item_text">
+              <h4>삑삐빅 게임기</h4>
+              <p><i class="fa-solid fa-location-dot"></i>서울 양천구</p>
+              <p><i class="fa-solid fa-calendar-days"></i>2년 이상</p>
+            </div>
+            <div class="badge badge_style">기계</div>
+            <div class="badge badge_age">5+</div>
           </div>
-          <div class="item item6">
-            <div class="item_name"></div>
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-hand-sparkles"></i>
+          <div class="item">
+            <div class="item_img item6"></div>
+            <div class="item_status">HOT</div>
+            <div class="item_text">
+              <h4>소형 비행기</h4>
+              <p><i class="fa-solid fa-location-dot"></i>인천광역시 중구</p>
+              <p><i class="fa-solid fa-calendar-days"></i>1년 이상</p>
+            </div>
+            <div class="badge badge_style">기계</div>
+            <div class="badge badge_age">2+</div>
           </div>
-          <div class="item item7">
-            <div class="item_name"></div>
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-hand-sparkles"></i>
+          <div class="item">
+            <div class="item_img item7"></div>
+            <div class="item_status">HOT</div>
+            <div class="item_text">
+              <h4>움직이는 아톰</h4>
+              <p><i class="fa-solid fa-location-dot"></i>충청남도 보령시</p>
+              <p><i class="fa-solid fa-calendar-days"></i>5년 이상</p>
+            </div>
+            <div class="badge badge_style">기계</div>
+            <div class="badge badge_age">4+</div>
           </div>
-          <div class="item item8">
-            <div class="item_name"></div>
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-hand-sparkles"></i>
+          <div class="item">
+            <div class="item_img item8"></div>
+            <div class="item_status">HOT</div>
+            <div class="item_text">
+              <h4>캣잎 고양이 쿠션</h4>
+              <p><i class="fa-solid fa-location-dot"></i>부산광역시 수영구</p>
+              <p><i class="fa-solid fa-calendar-days"></i>6개월 이상</p>
+            </div>
+            <div class="badge badge_style">인형</div>
+            <div class="badge badge_age">2+</div>
           </div>
           </div>
+    </section>
+    <section class="product" id="sec2">
+      <div class="inner">
+        <p>직접 의뢰하거나, <br/>직접 제작할 수 있습니다.</p>
+        <a href="#" class="product_btn">제작상품 알아보기</a>
+              <img src="./image/허수아비.png" alt="" class="people">
+              <img src="./image/개천절.png" alt="" class="event">
+              <img src="./image/개구리.png" alt="" class="flog"> 
+              <a href="#" class="plus_btn">더보기 +</a>
+      </div>
+    </section>
+    <section class="papper" id="sec3">
+      <div class="inner">
+        <p>주제마다 골라쓰는, 활동지</p>
+        <a href="#" class="papper_btn">활동지 구경하기</a>
+        <!-- 기주 ㄴ -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./image/paper1.jpg" alt="스타벅스와 함께 내가 좋아하는 것을 즐기는 나만의 여름" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/paper2.jpg" alt="스타벅스와 함께 내가 좋아하는 것을 즐기는 나만의 여름" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/paper3.jpg" alt="스타벅스와 함께 내가 좋아하는 것을 즐기는 나만의 여름" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/paper4.jpg" alt="스타벅스와 함께 내가 좋아하는 것을 즐기는 나만의 여름" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/paper5.png" alt="스타벅스와 함께 내가 좋아하는 것을 즐기는 나만의 여름" />
+            </div>
+  
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+              <!-- 기준 -->
+      </div>
     </section>
     <div class="modal_bg"></div>
   </body>
