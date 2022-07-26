@@ -1,0 +1,353 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/* font-family: 'Poor Story', cursive; */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  /* position: relative; */
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 3vh 3vw;
+  align-items: center;
+  z-index: 2;
+  background-color: white;
+}
+
+header .btn_menu {
+  display: none;
+}
+
+/* LOGO */
+header h1 a {
+  position: relative;
+  font: bold 24px/1 'Poor Story';
+  color: green;
+}
+
+header h1 a i {
+  font: 20px/1 'Poor Story';
+  color: green;
+}
+
+/* GNB */
+header #gnb {
+  position: absolute;
+  display: flex;
+  left: 170px;
+}
+
+header #snb {
+  display: none;
+}
+
+header #gnb li {
+  margin: 0px 15px;
+}
+
+header #gnb a {
+  font: 16px/1 'Poor Story';
+  color: black;
+  letter-spacing: 1px;
+}
+
+header #id .sub_menu {
+  opacity: 0;
+}
+
+/* INPUT_SEARCH */
+
+.search {
+  position: absolute;
+  right: 230px;
+}
+
+.search .search_input {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: #f2f3f6;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: 'Poor Story';
+  display: block;
+}
+
+/* USER */
+.user {
+  display: flex;
+}
+
+.user li {
+  margin: 0 5px;
+}
+
+.user li a {
+  padding: 10px 20px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: black;
+  font: 16px/1 'Poor Story';
+}
+
+.user li:nth-of-type(1) a {
+  border: 1px solid green;
+}
+
+.user li:nth-of-type(2) a {
+  background-color: green;
+  color: white;
+}
+
+/* SNS */
+.sns {
+  display: flex;
+}
+
+.sns li {
+  margin: 0 10px;
+}
+
+.sns li a {
+  color: black;
+  font-size: 16px;
+}
+
+#snb .search_icon {
+  position: absolute;
+  top: 0;
+  display: none;
+  font-size: 18px;
+  color: black;
+}
+
+/* Video */
+
+figure {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure .text {
+  position: absolute;
+  left: 6vw;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+figure .text p {
+  font: normal 5vw/1 'Poor Story';
+  color: black;
+  line-height: 1.5;
+}
+
+figure .text span {
+  font: normal 1.5vw/1 'Poor Story';
+  line-height: 2;
+}
+
+figure .text span i {
+  color: green;
+}
+
+/* MODAL BACKGROUN */
+.modal_bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(32, 30, 30, 0.646);
+  z-index: 1;
+  opacity: 0;
+}
+
+.modal_bg.hide {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(32, 30, 30, 0.646);
+  z-index: 1;
+  opacity: 1;
+}
+
+.service {
+  position: absolute;
+  top: 700px;
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  text-align: center;
+}
+
+section .inner {
+  padding: 3vh 3vw;
+}
+
+.service p {
+  /* font: normal 4vw/1 'Poor Story'; */
+  font-size: 4vw;
+  line-height: 1.5;
+  padding: 20px 0;
+}
+
+.service .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.service .content > div {
+  width: 40%;
+  height: 50vh;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.service .content > div span {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.service .content .content_1 {
+  background-color: rgb(254, 146, 146);
+  text-align: left;
+  font: 4vw/1 'Poor Story';
+}
+
+.service .content .content_2 {
+  background-color: rgb(254, 223, 146);
+  text-align: left;
+  font: 4vw/1 'Poor Story';
+}
+
+.service .content .content_3 {
+  background-color: rgb(211, 254, 146);
+  text-align: left;
+  font: 4vw/1 'Poor Story';
+}
+
+.service .content .content_4 {
+  background-color: rgb(146, 204, 254);
+  text-align: left;
+  font: 4vw/1 'Poor Story';
+}
+
+.service .content > div > p {
+  font-size: 20px;
+}
+
+.service .content #notice {
+  padding-top: 70px;
+  font-size: 15px;
+  color: white;
+}
+
+.sample {
+  position: absolute;
+  top: 1700px;
+  width: 100%;
+  height: 500px;
+  background-color: gray;
+  text-align: center;
+}
+
+/* MOBILE */
+
+@media (max-width: 840px) {
+  header #gnb {
+    display: none;
+  }
+
+  header .user {
+    display: none;
+  }
+
+  #snb .search_icon {
+    display: block;
+    top: 29px;
+    right: 60px;
+  }
+
+  header #snb {
+    display: block;
+  }
+
+  header #snb .btn_menu {
+    color: black;
+    font-size: 20px;
+    display: block;
+  }
+
+  header #snb .sub_menu {
+    position: absolute;
+    top: 11vh;
+    right: 0;
+    padding: 10px;
+    background-color: white;
+    opacity: 1;
+    transition: 0.4s;
+    width: 100%;
+  }
+
+  header #snb .sub_menu li {
+    padding: 20px;
+    font: 16px/1 'Poor Story';
+  }
+
+  header #snb .sub_menu li:not(.sns_icon):hover {
+    background-color: rgba(0, 0, 0, 0.183);
+  }
+
+  header #snb .sub_menu li a {
+    color: black;
+  }
+
+  header #snb .sub_menu li i {
+    margin-right: 8px;
+  }
+
+  header #snb .sub_menu.hide {
+    opacity: 0;
+  }
+
+  header .btn_menu {
+    display: block;
+  }
+
+  .search .search_input {
+    display: none;
+  }
+}
