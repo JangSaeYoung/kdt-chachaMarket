@@ -1,6 +1,6 @@
-window.onload = () => {
-  alert('맥북프로13 과 아이폰12pro 기준으로 봐주세요!!!');
-};
+// window.onload = () => {
+//   alert('맥북프로13 과 아이폰12pro 기준으로 봐주세요!!!');
+// };
 
 const subMenu = document.querySelector('#snb .sub_menu');
 const snbBtn = document.querySelector('#snb .btn_menu');

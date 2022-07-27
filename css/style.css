@@ -36,22 +36,22 @@ header .btn_menu {
 }
 
 /* LOGO */
+
 header h1 a {
   position: relative;
-  font: bold 24px/1 'Poor Story';
+  font: bold 30px/1 'Poor Story';
   color: green;
 }
 
-header h1 a i {
-  font: 20px/1 'Poor Story';
-  color: green;
+header h1 a .logo {
+  width: 30px;
 }
 
 /* GNB */
 header #gnb {
   position: absolute;
   display: flex;
-  left: 170px;
+  left: 180px;
 }
 
 header #snb {
@@ -445,23 +445,23 @@ section .inner {
 
 .product .inner .people {
   position: absolute;
-  width: 250px;
-  top: 190px;
-  right: 200px;
+  width: 17%;
+  top: 20vh;
+  right: 18vw;
 }
 
 .product .inner .event {
   position: absolute;
-  top: 230px;
-  right: 505px;
-  width: 410px;
+  top: 25vh;
+  right: 35vw;
+  width: 30%;
 }
 
 .product .inner .flog {
   position: absolute;
-  width: 230px;
-  top: 280px;
-  left: 190px;
+  width: 17%;
+  top: 30vh;
+  left: 15vw;
 }
 
 .product .inner .plus_btn {
@@ -517,6 +517,7 @@ section .inner {
   position: absolute;
   bottom: -5px;
 }
+
 /* MOBILE */
 @media (max-width: 840px) {
   header #gnb {
@@ -651,8 +652,8 @@ section .inner {
   .product .inner .event {
     position: absolute;
     top: 28vh;
-    left: 10px;
-    width: 360px;
+    left: 10vw;
+    width: 80vw;
   }
 
   .product .inner > .people,
